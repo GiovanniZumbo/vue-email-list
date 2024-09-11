@@ -13,9 +13,9 @@
     <main id="app">
         <div>
 
-            <h1> Random Emails</h1>
-            <ul>
-                <li v-for="randomEmail in randomEmails"> {{ randomEmail }}</li>
+            <h1> Random Emails </h1>
+            <ul v-show="randomEmails.length === 10">
+                <li v-for="randomEmail in randomEmails" v-text="randomEmail"></li>
             </ul>
 
         </div>
