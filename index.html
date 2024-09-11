@@ -12,8 +12,10 @@
 <body>
     <main id="app">
         <div>
+
+            <h1> Random Emails</h1>
             <ul>
-                <li> {{ randomEmail }}</li>
+                <li v-for="randomEmail in randomEmails"> {{ randomEmail }}</li>
             </ul>
 
         </div>
