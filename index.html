@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="GiovanniZumbo">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <script defer src="script.js"></script>
 </head>
 
 <body>
     <main id="app">
-        <div>
+
+        <div v-cloak>
 
             <h1> Random Emails </h1>
             <ul v-show="randomEmails.length === 10">
